@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-23T00:09:54 IDT" name="Suite" finished-at="2020-09-23T00:10:39 IDT" duration-ms="45752">
+  <suite started-at="2020-09-23T10:00:00 IDT" name="Suite" finished-at="2020-09-23T10:00:47 IDT" duration-ms="47496">
     <groups>
       <group name="change currency test">
         <method signature="MainRunner.changeCurrency()[pri:3, instance:tests.MainRunner@2ddc8ecb]" name="changeCurrency" class="tests.MainRunner"/>
@@ -20,9 +20,9 @@
         <method signature="MainRunner.setFiltersAndSort()[pri:4, instance:tests.MainRunner@2ddc8ecb]" name="setFiltersAndSort" class="tests.MainRunner"/>
       </group> <!-- set filters and sort -->
     </groups>
-    <test started-at="2020-09-23T00:09:54 IDT" name="Up Footer" finished-at="2020-09-23T00:10:39 IDT" duration-ms="45752">
+    <test started-at="2020-09-23T10:00:00 IDT" name="Up Footer" finished-at="2020-09-23T10:00:47 IDT" duration-ms="47496">
       <class name="tests.MainRunner">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:09:54 IDT" name="setup" finished-at="2020-09-23T00:09:59 IDT" duration-ms="5755" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:00 IDT" name="setup" finished-at="2020-09-23T10:00:06 IDT" duration-ms="6053" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,23 +33,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openWebSite()[pri:1, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:09:59 IDT" name="openWebSite" description="Open the web site test" finished-at="2020-09-23T00:10:02 IDT" duration-ms="2306" status="PASS">
+        <test-method signature="openWebSite()[pri:1, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:06 IDT" name="openWebSite" description="Open the web site test" finished-at="2020-09-23T10:00:09 IDT" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebSite -->
-        <test-method signature="moveToNewIn()[pri:2, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:10:02 IDT" name="moveToNewIn" description="navigate to new in page" finished-at="2020-09-23T00:10:14 IDT" duration-ms="12259" status="PASS">
+        <test-method signature="moveToNewIn()[pri:2, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:09 IDT" name="moveToNewIn" description="navigate to new in page" finished-at="2020-09-23T10:00:21 IDT" duration-ms="12413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moveToNewIn -->
-        <test-method signature="changeCurrency()[pri:3, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:10:14 IDT" name="changeCurrency" description="change currency" finished-at="2020-09-23T00:10:18 IDT" duration-ms="4370" status="PASS">
+        <test-method signature="changeCurrency()[pri:3, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:21 IDT" name="changeCurrency" description="change currency" finished-at="2020-09-23T10:00:26 IDT" duration-ms="4384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeCurrency -->
-        <test-method signature="setFiltersAndSort()[pri:4, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:10:18 IDT" name="setFiltersAndSort" description="filters and sort" finished-at="2020-09-23T00:10:36 IDT" duration-ms="17938" status="PASS">
+        <test-method signature="setFiltersAndSort()[pri:4, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:26 IDT" name="setFiltersAndSort" description="filters and sort" finished-at="2020-09-23T10:00:44 IDT" duration-ms="17993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFiltersAndSort -->
-        <test-method signature="validatePrices()[pri:5, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:10:36 IDT" name="validatePrices" description="validate prices" finished-at="2020-09-23T00:10:39 IDT" duration-ms="2146" status="FAIL">
+        <test-method signature="validatePrices()[pri:5, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:44 IDT" name="validatePrices" description="validate prices" finished-at="2020-09-23T10:00:46 IDT" duration-ms="2142" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[items total price is higher than $270 expected [true] but found [false]]]>
@@ -59,8 +59,8 @@
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:969)
 at org.testng.Assert.assertTrue(Assert.java:43)
-at pages.NewInPage.validatePrices(NewInPage.java:126)
-at tests.MainRunner.validatePrices(MainRunner.java:34)
+at pages.NewInPage.validatePrices(NewInPage.java:83)
+at tests.MainRunner.validatePrices(MainRunner.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePrices -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T00:10:39 IDT" name="close" finished-at="2020-09-23T00:10:39 IDT" duration-ms="623" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.MainRunner@2ddc8ecb]" started-at="2020-09-23T10:00:47 IDT" name="close" finished-at="2020-09-23T10:00:47 IDT" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

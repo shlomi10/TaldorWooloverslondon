@@ -24,13 +24,13 @@ public class NewInPage extends BasePage {
     private final String currencyVal = "USD";
     private By saveBTNcurrency = By.xpath("//input[@data-action='SaveAndClose']");
     private By resetFilter = By.cssSelector("div.js-reset-filters.hidden-xs.active");    
-    private By filterBtn = By.xpath("//h2[@class='listing-navigation__title js-show-filters']");   
+    private By filterBtn = By.cssSelector("h2.listing-navigation__title.js-show-filters");  
     private By womenOptionAtFilter = By.xpath("//a[@title='Women']");  
     private By womenOptionStatus = By.xpath("//a[@title='Women']/..");  
     private final String expectedStatusBTN = "active"; 
     private By dressOptionAtFilter = By.xpath("//a[@title='Dress']");   
     private By dressOptionStatus = By.xpath("//a[@title='Dress']/..");
-    private By resultNumber = By.xpath("//div[@class='filter-controls hidden-xs']//span");   
+    private By resultNumber = By.cssSelector("div.filter-controls.hidden-xs span");   
     private final String expectedResultNumber = "12"; 
     private String actualResultNumber;
     private By applyFilterBtn = By.cssSelector("div.filter-controls.hidden-xs>.btn.js-apply-filters");
@@ -43,10 +43,7 @@ public class NewInPage extends BasePage {
     // function to change the currency to USD
 	public void changeTheCurrency() {
 		clickOnElem(shippingLocationBtn);		
-		//pause(2000);
-		//waitForElementToBeClickable(currencyOptions);
 		safeClick(currencyOptions);
-		//clickOnElem(currencyOptions);
 		pause(2000);
 		selectOptionFromDropBox(currencyOptions, currencyVal);		
 		clickOnElem(saveBTNcurrency);
@@ -54,44 +51,25 @@ public class NewInPage extends BasePage {
 	
 	// function to clear filters and to choose new ones
 	public void selectFilters() {	
-		//pause(2000);
-		//clickAndWaitOnElem(resetFilter);
-		//clickOnElem(resetFilter);
 		safeClick(resetFilter);
-		//pause(2000);
-		//clickAndWaitOnElem(filterBtn);
-		//clickOnElem(filterBtn);
 		safeClick(filterBtn);
 		waitForElementToBeClickable(womenOptionAtFilter);
-		//pause(2000);
-		//clickOnElem(womenOptionAtFilter);
-		//clickOnElem(womenOptionAtFilter);
 		safeClick(womenOptionAtFilter);
 		pause(2000);
 		assertEquals(getAttributeFromElement(womenOptionStatus, "class"), expectedStatusBTN, "the women filter is not marked");
-		//pause(2000);
-		//waitForElementToBeClickable(dressOptionAtFilter);
-		//clickOnElem(dressOptionAtFilter);
 		safeClick(dressOptionAtFilter);
 		pause(2000);
 		assertEquals(getAttributeFromElement(dressOptionStatus,"class"), expectedStatusBTN, "the dress filter is not marked");
-		//pause(2000);
 		waitForTextToBePresentedInElement(resultNumber, expectedResultNumber);
 		actualResultNumber = getTextFromElement(resultNumber);
 		actualResultNumber = actualResultNumber.substring(actualResultNumber.indexOf('(')+1,actualResultNumber.indexOf(')'));
 		assertEquals(actualResultNumber, expectedResultNumber, "result number is not matched the expected result");
-		//pause(2000);
-		//clickOnElem(applyFilterBtn);
 		safeClick(applyFilterBtn);
 	}
 
 	// function to sort items
 	public void sortItems() {
-		//pause(2000);
-		//clickAndWaitOnElem(sortBtn);
-		//clickOnElem(sortBtn);
 		safeClick(sortBtn);
-		//clickAndWaitOnElem(priceLowToHighOption);
 		clickOnElem(priceLowToHighOption);
 		waitForElementToBePresented(resetFilter);
 	}

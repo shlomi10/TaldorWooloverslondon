@@ -6,8 +6,12 @@
       <class name="tests.MainRunner">
         <methods>
           <include name="changeCurrency"/>
+          <include name="moveToNewIn"/>
+          <include name="openWebSite"/>
           <include name="close"/>
+          <include name="setFiltersAndSort"/>
           <include name="setup"/>
+          <include name="validatePrices"/>
         </methods>
       </class> <!-- tests.MainRunner -->
     </classes>

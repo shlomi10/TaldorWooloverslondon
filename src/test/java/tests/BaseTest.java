@@ -14,7 +14,7 @@ import utilities.ExtentListener;
  * @category Base test
  * @apiNote These is the setup for the runner
  */
-
+@SuppressWarnings("javadoc")
 public class BaseTest {
 
 	WebDriver driver;

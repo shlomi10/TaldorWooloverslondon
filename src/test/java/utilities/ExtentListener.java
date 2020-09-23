@@ -10,7 +10,7 @@ import com.aventstack.extentreports.Status;
  * @category extent listener
  * @apiNote listeners
  */
-@SuppressWarnings("javadoc")
+
 public class ExtentListener extends ExtentManager implements ITestListener {
 
 	String str;
